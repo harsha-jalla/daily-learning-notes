@@ -199,6 +199,21 @@ When Maven encounters this:
   <artifactId>...</artifactId>
   <version>...</version>
 </parent>
+```
+
+Maven does the following:
+
+1. Reads the parent POM as data  
+2. Reads the child POM as data  
+3. Merges both into one **effective POM**
+
+Important clarifications:
+- No constructor is called
+- No code is executed
+- No runtime behavior happens
+
+It is **only data merging**, and **child overrides parent**.
+
 
 ## Part 8 – Dependencies (What They Actually Mean)
 
@@ -445,6 +460,7 @@ Example:
 
 ```xml
 <java.version>21</java.version>
+```
 
 ## Part 12 – Maven Lifecycle (The Fixed Order of Steps)
 
