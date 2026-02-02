@@ -155,6 +155,15 @@ So Maven requires three mandatory identity values:
 <groupId>
 <artifactId>
 <version>
+```
+
+These answer:
+- Who am I?
+- What is my project name?
+- Which version am I?
+
+Without these values, Maven refuses to run.
+
 
 ## Part 7 – Parent POM (How Maven Handles Inheritance)
 
